@@ -30,7 +30,7 @@ Make a local copy of your new forked repository using git clone.
 Add your original repository as an upstream remote in your forked repository. Doing this will allow you to pull in changes from your original repository to your forked repository.
 
 `cd <forked-repo>`
-`git remote add upstream https://github.com/cxpartners/next-starter.git`
+`git remote add upstream https://github.com/davelovemartin/next-starter.git`
 
 4. Update your fork
 Update your fork with all the changes from your original repository using `git pull`.
