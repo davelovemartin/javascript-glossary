@@ -5,9 +5,11 @@
   "license": "MIT",
   "browserslist": "> 0.25%",
   "dependencies": {
-    "next": "^10.0.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "next": "^11.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.35.2"
   },
   "scripts": {
     "dev": "next dev",
@@ -15,11 +17,21 @@
     "start": "next start",
     "test": "eslint --ignore-path .gitignore --ext .js,.jsx .",
     "fix": "eslint --ignore-path .gitignore --ext .js,.jsx . --fix",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json)\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json)\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
+    "@storybook/addon-actions": "^6.3.4",
+    "@storybook/addon-essentials": "^6.3.4",
+    "@storybook/addon-links": "^6.3.4",
+    "@storybook/builder-webpack5": "^6.3.4",
+    "@storybook/manager-webpack5": "^6.3.4",
+    "@storybook/react": "^6.3.4",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
     "eslint": "^7.22.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
@@ -31,6 +43,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "4",
     "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0"
   }
 }

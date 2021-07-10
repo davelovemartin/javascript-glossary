@@ -1,0 +1,25 @@
+{
+  "Component": {
+    "prefix": "comp",
+    "body": [
+      "import PropTypes from 'prop-types'",
+      "import styles from './$1.module.scss'",
+      "",
+      "const $1 = (props) => {",
+      "  const { children } = props",
+      "  return (",
+      "    <$2>",
+      "      {children}",
+      "    </$2>",
+      "  )",
+      "}",
+      "",
+      "export default $1",
+      "",
+      "$1.propTypes = {",
+      "  children: PropTypes.element.isRequired",
+      "}"
+    ],
+    "description": "Functional React Component"
+  }
+}

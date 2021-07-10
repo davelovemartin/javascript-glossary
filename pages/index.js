@@ -1,5 +1,6 @@
-import React from 'react';
-import Head from 'next/head';
+import React from 'react'
+import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -8,12 +9,14 @@ export default function Home() {
         <title>Next Starter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header>
+        <h1 className="title">glossary</h1>
+      </Header>
       <main>
-        <h1 className="title">
-          Welcome to the <a href="https://nextjs.org">Next.js</a> Starter!
-        </h1>
+        <ul>
+          <li>term</li>
+        </ul>
       </main>
     </div>
-  );
+  )
 }
